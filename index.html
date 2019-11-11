@@ -9,16 +9,19 @@
 </head>
 <body>
 
+    <div id="application-root"></div>
         
-
+<!--type="text/jsx"-->
 
     <script src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script>
-    <script> 
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"> </script>
+    <script type="text/babel">
     function App() {
             return (
               <div>
-                    <h1>Sally Student Resume</h1>
+                                    
+                <h1>Sally Student Resume</h1>
 
                 <section>
                     <header>
@@ -76,7 +79,13 @@
           };
     
     
-    ReactDOM.render(<App />, document.querySelector('body'));
+    ReactDOM.render(
+        <App 
+            nameProp={name} 
+            
+        />, 
+    document.querySelector('#application-root')
+    );
     
     
     </script>
