@@ -4,11 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="main.css" rel="stylesheet" type="text/css"/>
     <title>Document</title>
 </head>
 <body>
-    <script>
+
         
+
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script>
+    <script> 
+    function App() {
+            return (
+              <div>
+                    <h1>Sally Student Resume</h1>
+
+                <section>
+                    <header>
+                    <h2>Education</h2>
+                    </header>
+                    <h3>Harvard University</h3>
+                    <p>2003-2007</p>
+                    <p>BA in Communication Arts</p>
+                    <h3>Boston University</h3>
+                    <p>2008-2012</p>
+                    <p>Masters in Pole Vaulting</p>
+                </section>
+                    
+                <section>
+                    <header>
+                    <h2>Experience</h2>
+                    </header>
+                    <h3>Pho #1, Pho Generalist</h3>
+                    <p>2018-present</p>
+                    <p> We make Pho and other great Vietnamese dishes! </p>
+                    <ul>
+                        <li>Make the soups</li>
+                        <li>Refill the waters</li>
+                        <li>Bring out the cats</li>
+                    </ul>
+                </section>
+                    
+                <section>
+                    <header>
+                    <h3>Jumpstart, Talent Management Coordinator</h3>
+                    </header>
+                    <p>2013-2018</p>
+                    <p> Jumpstart is an early education program serving the literacy learning needs of preschool children in underserved communities across the United States. My role at Jumpstart was as an HR and Benefits generalist, managing the daily HR-related needs of the network.</p> 
+                    <ul>
+                        <li>Administered employee benefits</li>
+                        <li>Managed demographic reporting</li>
+                        <li>Ran technical triage for Director of HR</li>
+                    </ul>
+                </section>
+                    
+                <section>
+                    <header>
+                    <h2>Contact Sally:</h2>
+                    </header>
+                    <address>by email:<a href="mailto:sally.student@coolsally.com">sally.student@coolsally.com</a>
+                    <br>
+                    by phone: 207.807.8321
+                    <br>
+                    by mail: 40 Pizza Ave, Boston, MA 02210
+                    </address>
+                    <img src="https://previews.123rf.com/images/karakotsya/karakotsya1701/karakotsya170100376/69822112-hand-drawing-sketch-doodle-human-stick-figure-cheerful-girl-with.jpg" alt="An image of Sally." width="300" />
+                </section>
+              </div>
+            );
+          };
+    
+    
+    ReactDOM.render(<App />, document.querySelector('body'));
+    
+    
     </script>
     
 </body>
